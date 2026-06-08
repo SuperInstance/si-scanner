@@ -1,0 +1,16 @@
+[package]
+name = "si-scanner"
+version = "0.1.0"
+edition = "2021"
+description = "Fleet-wide discovery and cataloging for SuperInstance"
+license = "MIT"
+repository = "https://github.com/SuperInstance/si-scanner"
+keywords = ["superinstance", "fleet", "scanner", "catalog", "discovery"]
+categories = ["development-tools", "data-structures"]
+
+[dependencies]
+ureq = { version = "3", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
